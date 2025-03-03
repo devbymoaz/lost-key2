@@ -23,7 +23,7 @@ export default function CustomHeroSection() {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   const nextIndex = (currentIndex + 1) % images.length;
 
