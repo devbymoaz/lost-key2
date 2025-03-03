@@ -27,13 +27,6 @@ export default function CustomHeroSection() {
 
   const nextIndex = (currentIndex + 1) % images.length;
 
-  const data = [
-    { title: "Suitcase", icon: <FaBagShopping size={40} /> },
-    { title: "Cell Phone", icon: <FaMobileAlt size={40} /> },
-    { title: "Key", icon: <GiHouseKeys size={40} /> },
-    { title: "Pets", icon: <MdOutlinePets size={40} /> },
-    { title: "Wallets", icon: <IoMdWallet size={40} /> },
-  ];
 
   return (
     <div className="relative w-full h-[84vh] overflow-hidden">
