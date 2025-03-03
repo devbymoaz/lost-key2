@@ -16,6 +16,7 @@ export default function Page() {
         {shopItems.map((item, index) => (
           <ShopCard
             key={index}
+        
             image={item.image}
             title={item.title}
             price={item.price}

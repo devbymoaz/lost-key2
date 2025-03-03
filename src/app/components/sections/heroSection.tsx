@@ -11,8 +11,9 @@ import { IoMdWallet } from "react-icons/io";
 
 export default function CustomHeroSection() {
   const images = [
-    "/wmremove-transformed (1) 1.png",
-    "/pexels-busra-altin-60338887-30780540.jpg",
+    "/3ff1d8_d12bf09b00324487936a70338c2db02e~mv2.jpg",
+    "/3ff1d8_f1643df73163432394da4438b45b279d~mv2.jpg",
+    "/a8f8c3_c741f38b46594d8ba078058444f6dfef~mv2.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -91,7 +92,7 @@ export default function CustomHeroSection() {
       </div>
 
       {/* Bottom Section */}
-      <div className="absolute bottom-0 w-full bg-primary/70 backdrop-blur-sm py-4">
+      {/* <div className="absolute bottom-0 w-full bg-primary/70 backdrop-blur-sm py-4">
         <div className="flex flex-wrap gap-8 sm:gap-10 md:gap-16 justify-center items-center text-white px-4">
           {data.map((val, ind) => (
             <div key={ind} className="flex flex-col items-center">
@@ -100,7 +101,7 @@ export default function CustomHeroSection() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { navLinks } from "../../utils/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiX, BiMenu } from "react-icons/bi";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Navigation() {
     const pathname = usePathname();
@@ -18,21 +19,21 @@ export default function Navigation() {
             </div>
 
             <div className="px-6 md:px-12 flex bg-white shadow-md w-full items-center justify-between py-4">
-                <h1 className="text-2xl md:text-3xl font-bold">Logo</h1>
+                <img src="/WhatsApp Image 2025-03-03 at 11.30.59 PM.jpeg" alt="" className="h-12"/>
 
                 <div className="hidden md:flex gap-6">
                     {navLinks.map(({ href, label }) => (
                         <Link 
                             key={href} 
                             href={href} 
-                            className={`text-lg ${pathname === href ? "text-primary font-bold" : "font-semibold"}`}
+                            className={`text-xl ${pathname === href ? "text-primary font-bold" : "font-semibold"}`}
                         >
                             {label}
                         </Link>
                     ))}
                 </div>
 
-                <h1 className="text-2xl md:text-3xl font-bold hidden md:block">Contact</h1>
+                <FaPhoneAlt size={30} className="text-blue-900 text-2xl md:text-3xl font-bold hidden md:block"/>
 
                 <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
                     {isOpen ? <BiX size={28} /> : <BiMenu size={28} />}
@@ -57,7 +58,7 @@ export default function Navigation() {
                                 {label}
                             </Link>
                         ))}
-                        <h1 className="text-2xl font-bold">Contact</h1>
+                        <FaPhoneAlt />
                     </motion.div>
                 )}
             </AnimatePresence>
